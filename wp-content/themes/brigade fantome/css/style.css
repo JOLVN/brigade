@@ -9896,5 +9896,126 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../assets/images/fond_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 730px;
+  width: 100%;
+}
+
+.top-menu {
+  top: 50px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
+}
+.top-menu .pages {
+  width: 60%;
+  text-align: center;
+}
+.top-menu .pages li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.top-menu .pages li a {
+  color: white;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  fon-weight: 500;
+}
+.top-menu .pages .equipage .arrow {
+  float: right;
+  margin-left: 15px;
+}
+.top-menu .pages .equipage a {
+  flaot: left;
+}
+.top-menu .reseaux li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 50px;
+  mergin-left: 50px;
+  justify-content: space-evenly;
+}
+.header-content .logo-brigade {
+  background-image: url("../../../../assets/logo/logo2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 358px;
+  height: 200px;
+}
+.header-content .description {
+  width: 34%;
+}
+.header-content .description button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-content .description button p, .header-content .description button .arrow {
+  margin-top: 3px;
+}
+
+#arrow-scroll {
+  position: relative;
+  text-align: center;
+  top: 55%;
+}
+
+.footer {
+  position: relative;
+  top: 20px;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+}
+.text h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.text p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+.btn {
+  border-radius: 50px !important;
+  width: 150px;
+  height: 43px;
+}
+
+.btn-info {
+  background-color: #017B82 !important;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
