@@ -1,0 +1,81 @@
+/**
+Theme Name: themename
+Author: OCITOCINE
+Author URI: https://www.ocitocine.com
+Version: 1.0.0
+*/
+
+/******************************
+ * Imports
+ ******************************/
+@import "styles/libs/normalize";
+@import "styles/utils/variables";
+@import "styles/utils/mixins";
+@import 'styles/utils/fonts';
+@import "styles/utils/texts";
+@import 'styles/utils/utils';
+
+/******************************
+ * Layout
+ ******************************/
+@import 'styles/layout/containers';
+@import 'styles/layout/header';
+@import 'styles/layout/footer';
+@import 'styles/layout/aside';
+
+/******************************
+ * Sections
+ ******************************/
+@import 'styles/sections/section';
+@import 'styles/sections/block';
+
+/******************************
+ * Components
+ ******************************/
+@import 'styles/components/button';
+
+
+//@import "bootstrap/bootstrap";
+
+@import "styles/scss/header";
+
+@import "styles/scss/footer";
+
+@import "styles/scss/textes";
+
+@import "styles/scss/button";
+
+
+
+
+
+/******************************
+ * Style
+ ******************************/
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top:0;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color_black;
+  background-color: $color_white;
+  @include fluid-type(font-size, 768px, 1920px, 10px, 20px);
+}
+
+body {
+  background: $color_white;
+}

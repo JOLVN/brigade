@@ -1,0 +1,58 @@
+/******************************
+ * Utils
+ ******************************/
+/***************
+ * Misc / Reset
+ ***************/
+*:focus {
+  outline: none;
+}
+
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+menu{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure{
+  margin: 0;
+}
+
+/***************
+ * Visibility
+ ***************/
+.hidden {
+  display: none !important;
+}
+
+/***************
+ * Mobile
+ ***************/
+.mobile--only {
+  display: none;
+}
+
+/******************************
+ * Alternative: MQ
+ ******************************/
+@media only screen and (max-width: $breakpoint-tablet-m) {
+  .mobile--only {
+    display: block;
+  }
+
+  .desktop--only {
+    display: none;
+  }
+}
