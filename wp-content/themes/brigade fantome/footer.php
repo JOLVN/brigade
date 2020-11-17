@@ -1,9 +1,12 @@
 
-<div class="footer">
-<h1>Footer </h1>
+    <div class="footer">
+        <h1>Footer </h1>
 
-<form action="" class="form-control">
-    <input type="text">
-</form>
+        <form action="" class="form-control">
+            <input type="text">
+        </form>
+    </div>
 </div>
-</div>
+
+</body>
+</html>
