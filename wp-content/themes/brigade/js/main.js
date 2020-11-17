@@ -5,6 +5,7 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
+
 // Utils
 import Transiton from './utils/Transiton';
 
@@ -28,6 +29,7 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
 		}
 	};
 }
+
 
 /******************************
  * Register layouts / sections and components

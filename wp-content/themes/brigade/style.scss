@@ -1,7 +1,4 @@
 /**
-Theme Name: themename
-Author: OCITOCINE
-Author URI: https://www.ocitocine.com
 Version: 1.0.0
 */
 
@@ -46,6 +43,10 @@ Version: 1.0.0
 @import "styles/scss/button";
 
 
+body {
+  background: green !important;
+  
+}
 
 
 
