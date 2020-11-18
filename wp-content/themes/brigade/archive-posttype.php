@@ -15,6 +15,7 @@ get_header();
 	$posts_per_page = 10;
 
 	// Query
+	
 	$query = new WP_Query(array(
 		'post_type'			=> $post_type,
 		'posts_per_page'	=> $posts_per_page,
