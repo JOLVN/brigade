@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri()?>/glide.core.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -21,31 +22,50 @@
             <div class="header">
 
                 <div class="top-menu">
-
-                    <?php
-                    $image = get_field('logo', 'options');
-                    if (!empty($image)) : ?>
-                        <img class="logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
+                    <a href="http://0.0.0.0:8181/">
+                        <?php
+                        $image = get_field('logo', 'options');
+                        if (!empty($image)) : ?>
+                            <img class="logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                    </a>
 
                     <nav class="pages">
-                        <li><a href="#">Projets</a></li>
-                        <li id="equipage-title">
-                            <a href="#">Équipage</a>
-                            <div class="arrow"> <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="li1"><a href="#">Projets</a></li>
+                        <li class="li1">
+                            <div id="equipage-title">
+                                <a href="http://0.0.0.0:8181/index.php/equipage/">Équipage</a>
+                                <div class="arrow"> <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                                    <g clip-path="url(#clip0)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6247 0.338909C17.1095 0.805303 17.1269 1.57897 16.6635 2.06694L9.37782 9.73964C9.14872 9.9809 8.83157 10.1174 8.5 10.1174C8.16843 10.1174 7.85127 9.9809 7.62217 9.73964L0.33646 2.06694C-0.126904 1.57897 -0.109521 0.805302 0.375285 0.338908C0.860094 -0.127486 1.62875 -0.10999 2.09211 0.377987L8.5 7.12623L14.9079 0.377988C15.3713 -0.109989 16.1399 -0.127485 16.6247 0.338909Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <rect width="17" height="11" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                        <g clip-path="url(#clip0)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6247 0.338909C17.1095 0.805303 17.1269 1.57897 16.6635 2.06694L9.37782 9.73964C9.14872 9.9809 8.83157 10.1174 8.5 10.1174C8.16843 10.1174 7.85127 9.9809 7.62217 9.73964L0.33646 2.06694C-0.126904 1.57897 -0.109521 0.805302 0.375285 0.338908C0.860094 -0.127486 1.62875 -0.10999 2.09211 0.377987L8.5 7.12623L14.9079 0.377988C15.3713 -0.109989 16.1399 -0.127485 16.6247 0.338909Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="17" height="11" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <ul>
+                                    <li class="li2">
+                                        <a href="#">Dlanight</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a href="http://0.0.0.0:8181/index.php/benhabsxv/">Benhabsxv</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a href="#">Kams</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a href="#">Crystall Tears</a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="li1">
+                            <a href="http://0.0.0.0:8181/index.php/contact/">Contact</a>
+                        </li>
                     </nav>
                     <nav class="reseaux">
                         <!-- Youtube -->

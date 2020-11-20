@@ -2,51 +2,78 @@
 Version: 1.0.0
 */
 
-/******************************
- * Imports
- ******************************/
-@import "styles/libs/normalize";
-@import "styles/utils/variables";
-@import "styles/utils/mixins";
-@import 'styles/utils/fonts';
-@import "styles/utils/texts";
-@import 'styles/utils/utils';
 
 /******************************
- * Layout
+ * BOOTSTRAP
  ******************************/
-@import 'styles/layout/containers';
-@import 'styles/layout/header';
-@import 'styles/layout/footer';
-@import 'styles/layout/aside';
+
+@import "styles/scss/bootstrap/bootstrap";
 
 /******************************
- * Sections
+ * VARIABLES
  ******************************/
-@import 'styles/sections/section';
-@import 'styles/sections/block';
+
+@import "styles/scss/variables";
 
 /******************************
- * Components
+ * HEADER
  ******************************/
-@import 'styles/components/button';
-
-
-//@import "bootstrap/bootstrap";
 
 @import "styles/scss/header";
 
+/******************************
+ * FOOTER
+ ******************************/
+
 @import "styles/scss/footer";
+
+
+
+/******************************
+ * ELEMENTS
+ ******************************/
 
 @import "styles/scss/textes";
 
 @import "styles/scss/button";
 
 
-body {
-  background: green !important;
-  
-}
+/******************************
+/******************************
+/******************************
+ * PAGES
+******************************
+******************************
+******************************/
+
+
+  /******************************
+  * ACCUEIL
+  ******************************/
+  @import "styles/scss/page-accueil/sons";
+
+
+  /******************************
+  * EQUIPAGE
+  ******************************/
+
+  @import "styles/scss/page-equipage/top-equipage";
+  @import "styles/scss/page-equipage/membres-equipage";
+  @import "styles/scss/page-equipage/histoire-equipage";
+  @import "styles/scss/page-equipage/collaborateurs-equipage";
+
+  /******************************
+  * MEMBRES INDIVIDUELS
+  ******************************/
+  @import "styles/scss/membres";
+
+  /******************************
+  * CONTACT
+  ******************************/
+  @import "styles/scss/contact";
+
+
+
 
 
 
@@ -62,21 +89,11 @@ body {
     top:0;
 }
 
-* {
-  outline: none;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
+
 
 html, body {
-  font-family: Arial;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $color_black;
-  background-color: $color_white;
-  @include fluid-type(font-size, 768px, 1920px, 10px, 20px);
-}
-
-body {
-  background: $color_white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }

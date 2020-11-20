@@ -5,7 +5,6 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-
 // Utils
 import Transiton from './utils/Transiton';
 
